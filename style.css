@@ -1,233 +1,304 @@
-/* ==========================================
-   anwar110207-oss Ticket Booking Website
-   style.css
-========================================== */
+/* =========================================
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+/* General webpage styling */
+body {
+    background-color: #eef2ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background:#Lightblue;
-    color:#ffffff;
-    line-height:1.6;
+
+/* =========================================
+   QUESTION 4 - ELEMENT SELECTOR
+   ========================================= */
+
+p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Header */
 
-header{
-    background:#161b22;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,.4);
+/* =========================================
+   QUESTION 4 - GROUP SELECTOR
+   ========================================= */
+
+h1, h2 {
+    font-family: Arial, sans-serif;
 }
 
-.logo h1{
-    color:#00bfff;
+
+/* Heading styling */
+h2 {
+    font-size: 30px;
+    text-align: center;
 }
 
-nav ul{
-    display:flex;
-    list-style:none;
+h3 {
+    font-size: 22px;
 }
 
-nav ul li{
-    margin-left:25px;
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    background-color: #111827;
+    padding: 20px;
 }
 
-nav ul li a{
-    color:#ffffff;
-    text-decoration:none;
-    font-weight:bold;
-    transition:.3s;
+
+/* =========================================
+   QUESTION 7 - FLEXBOX NAVIGATION
+   ========================================= */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
 }
 
-nav ul li a:hover{
-    color:#00bfff;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-/* Hero Section */
-
-.hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
-    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65));
+nav a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
 }
 
-.hero h2{
-    font-size:55px;
-    color:#00bfff;
-    margin-bottom:20px;
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #dbeafe;
 }
 
-.hero p{
-    font-size:22px;
-    max-width:700px;
-    margin-bottom:30px;
+.hero button,
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.hero button{
-    padding:15px 35px;
-    background:#00bfff;
-    color:#fff;
-    border:none;
-    border-radius:30px;
-    font-size:18px;
-    cursor:pointer;
-    transition:.3s;
+button:hover {
+    background-color: #1d4ed8;
 }
 
-.hero button:hover{
-    background:#008ecc;
-    transform:scale(1.08);
+
+/* =========================================
+   QUESTION 6 - IMAGE STYLING
+   ========================================= */
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+    border: 3px double #2563eb;
+    padding: 5px;
+    margin-bottom: 10px;
+
+    box-sizing: border-box;
 }
 
-/* Sections */
 
-section{
-    padding:80px 8%;
+/* =========================================
+   QUESTION 4 - CLASS SELECTOR
+   ========================================= */
+
+.card {
+    background-color: white;
+    border: 2px solid #2563eb;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-section h2{
-    text-align:center;
-    color:#00bfff;
-    margin-bottom:40px;
+
+/* =========================================
+   QUESTION 9 - CSS GRID
+   ========================================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* Cards */
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+/* =========================================
+   QUESTION 8 - THREE CARDS
+   ========================================= */
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    width: 90%;
+    margin: 30px auto;
 }
 
-.card{
-    background:#161b22;
-    border-radius:15px;
-    overflow:hidden;
-    transition:.3s;
-    text-align:center;
+
+/* Class selector */
+.project-card {
+    background-color: #ffffff;
+
+    border: 2px solid #2563eb;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 20px #00bfff;
+
+/* =========================================
+   QUESTION 5 - CSS BOX MODEL
+   ========================================= */
+
+/* ID selector */
+#book {
+    background-color: #ffffff;
+
+    border: 2px solid #2563eb;
+
+    padding: 20px;
+
+    margin: 20px auto;
+
+    width: 80%;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
 }
 
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+
+/* Booking form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
 }
 
-.card h3{
-    margin:15px 0;
+input,
+select {
+    padding: 12px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 5px;
+
+    font-size: 16px;
 }
 
-.card p{
-    margin-bottom:20px;
+label {
+    font-weight: bold;
 }
 
-/* Booking Form */
 
-form{
-    background:#161b22;
-    max-width:650px;
-    margin:auto;
-    padding:30px;
-    border-radius:15px;
+/* =========================================
+   CONTACT
+   ========================================= */
+
+#contact {
+    text-align: center;
+    padding: 40px 20px;
 }
 
-form input,
-form select{
-    width:100%;
-    padding:14px;
-    margin:12px 0;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
 }
 
-form button{
-    width:100%;
-    padding:15px;
-    background:#00bfff;
-    color:white;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:18px;
-    transition:.3s;
+footer p {
+    color: white;
 }
 
-form button:hover{
-    background:#008ecc;
-}
 
-#message{
-    text-align:center;
-    color:#00ff99;
-    margin-top:20px;
-    font-size:20px;
-}
+/* =========================================
+   QUESTION 10 - RESPONSIVE DESIGN
+   ========================================= */
 
-/* Contact */
+@media screen and (max-width: 768px) {
 
-#contact{
-    text-align:center;
-}
+    /* Cards become one below another */
+    .cards {
+        grid-template-columns: 1fr;
+    }
 
-#contact p{
-    margin:10px;
-}
+    /* Project cards become one below another */
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
 
-/* Footer */
+    /* Navigation becomes vertical */
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-footer{
-    background:#161b22;
-    color:#cccccc;
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
-}
+    /* Images fit the screen */
+    .card img {
+        width: 100%;
+        height: auto;
+    }
 
-/* Responsive */
+    /* Booking section fits smaller screens */
+    #book {
+        width: 90%;
+    }
 
-@media(max-width:768px){
+    /* Smaller headings */
+    h1 {
+        font-size: 28px;
+    }
 
-header{
-    flex-direction:column;
-}
+    h2 {
+        font-size: 25px;
+    }
 
-nav ul{
-    flex-direction:column;
-    margin-top:15px;
-}
-
-nav ul li{
-    margin:10px 0;
-}
-
-.hero h2{
-    font-size:36px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
+    /* Smaller paragraph text */
+    p {
+        font-size: 16px;
+    }
 }
