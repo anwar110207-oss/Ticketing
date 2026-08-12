@@ -302,3 +302,31 @@ footer p {
         font-size: 16px;
     }
 }
+/* ================= TICKET TABLE ================= */
+
+#prices {
+    padding: 40px 20px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 2px solid #2563eb;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #2563eb;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eef2ff;
+}
