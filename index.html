@@ -3,18 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>anwar110207-oss Ticket Booking</title>
 
+    <!-- EXTERNAL CSS - Question 3 -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- INTERNAL CSS - Question 2 -->
+    <style>
+        /* Change webpage background */
+        body {
+            background-color: #f4f7fb;
+            font-family: Arial, sans-serif;
+        }
+
+        /* All H2 headings */
+        h2 {
+            color: #1e3a8a;
+        }
+
+        /* All paragraphs */
+        p {
+            font-size: 18px;
+        }
+
+        /* Centre all H1 headings */
+        h1 {
+            text-align: center;
+        }
+
+        /* Group selector - Question 4 */
+        h1, h2 {
+            font-family: Arial, sans-serif;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- Header -->
+    <!-- ================= HEADER ================= -->
     <header>
+
         <div class="logo">
-            <h1>🎟️ anwar110207-oss Ticket Booking</h1>
+            <!-- INLINE CSS - Question 1 -->
+            <h1 style="color: blue; text-align: center;">
+                🎟️ anwar110207-oss Ticket Booking
+            </h1>
         </div>
 
+        <!-- FLEXBOX NAVIGATION - Question 7 -->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -23,43 +60,113 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
     </header>
 
-    <!-- Hero -->
+
+    <!-- ================= HERO ================= -->
     <section id="home" class="hero">
-        <h2>Book Your Next Adventure</h2>
-        <p>Reserve tickets for concerts, movies, football matches and gaming events.</p>
+
+        <!-- INLINE CSS - Question 1 -->
+        <h2 style="background-color: lightblue;">
+            Book Your Next Adventure
+        </h2>
+
+        <!-- INLINE CSS - Question 1 -->
+        <p style="color: green;">
+            Reserve tickets for concerts, movies, football matches and gaming events.
+        </p>
+
+        <!-- INLINE CSS - Question 1 -->
+        <p style="font-size: 20px;">
+            Choose your event and book your ticket today.
+        </p>
 
         <a href="#book">
             <button>Book Now</button>
         </a>
+
     </section>
 
-    <!-- Events -->
+
+    <!-- ================= EVENTS ================= -->
     <section id="events">
+
         <h2>Featured Events</h2>
 
         <div class="cards">
 
             <div class="card">
-                <img width="520" height="260" alt="image 5" src="https://github.com/user-attachments/assets/1a66309d-c63b-4dd2-87f1-6c3ca4334027" />
+                <img
+                    src="https://github.com/user-attachments/assets/1a66309d-c63b-4dd2-87f1-6c3ca4334027"
+                    alt="Concert event"
+                >
+                <h3>Live Music Concert</h3>
+                <p>Enjoy an exciting live music experience.</p>
                 <p>Price: $50</p>
             </div>
 
+
             <div class="card">
-                <img width="581" height="528" alt="image 6" src="https://github.com/user-attachments/assets/cd6ddd59-a14a-4f35-adf1-8dc0b4e2405d" />
+                <img
+                    src="https://github.com/user-attachments/assets/cd6ddd59-a14a-4f35-adf1-8dc0b4e2405d"
+                    alt="Movie premiere event"
+                >
+                <h3>Movie Premiere</h3>
+                <p>Watch the latest movie on the big screen.</p>
                 <p>Price: $20</p>
             </div>
 
+
             <div class="card">
-            <img width="270" height="405" alt="image 7" src="https://github.com/user-attachments/assets/4d4000eb-c19b-4492-84a4-e4648d6a46cf" />
+                <img
+                    src="https://github.com/user-attachments/assets/4d4000eb-c19b-4492-84a4-e4648d6a46cf"
+                    alt="Football match event"
+                >
+                <h3>Football Match</h3>
+                <p>Experience an exciting football match.</p>
                 <p>Price: $35</p>
             </div>
 
         </div>
+
     </section>
 
-    <!-- Booking Form -->
+
+    <!-- ================= Q8 CARDS ================= -->
+    <section id="projects">
+
+        <h2>My Work</h2>
+
+        <div class="project-cards">
+
+            <div class="project-card">
+                <h3>Portfolio</h3>
+                <p>
+                    A collection of my work, skills and achievements.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>My Project</h3>
+                <p>
+                    A ticket booking website created using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Assignments</h3>
+                <p>
+                    My computer studies and web development assignments.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING FORM ================= -->
     <section id="book">
 
         <h2>Book Your Ticket</h2>
@@ -96,7 +203,7 @@
 
             </select>
 
-            <label>Select Seat</label>
+            <label for="seat">Select Seat</label>
 
             <select id="seat">
 
@@ -109,7 +216,7 @@
 
             </select>
 
-            <label>Number of Tickets</label>
+            <label for="tickets">Number of Tickets</label>
 
             <input
                 type="number"
@@ -129,7 +236,8 @@
 
     </section>
 
-    <!-- Contact -->
+
+    <!-- ================= CONTACT ================= -->
     <section id="contact">
 
         <h2>Contact Us</h2>
@@ -140,14 +248,16 @@
 
     </section>
 
-    <!-- Footer -->
+
+    <!-- ================= FOOTER ================= -->
     <footer>
 
-        <p>© 2026 anwar110207-oss Ticket Booking</p>
+        <p>©️ 2026 anwar110207-oss Ticket Booking</p>
 
         <p>Designed by anwar110207-oss</p>
 
     </footer>
+
 
     <script src="script.js"></script>
 
