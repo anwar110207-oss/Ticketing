@@ -1,38 +1,62 @@
-function makeRed() {
-    document.getElementById("home").style.color = "red";
-}
+// ==========================================
+// anwar110207-oss Ticket Booking Website
+// script.js
+// ==========================================
 
-function makeBlue() {
-    document.getElementById("home").style.color = "blue";
-}
+// Welcome message
+window.onload = function () {
+    alert("🎟️ Welcome to anwar110207-oss Ticket Booking!");
+};
 
-function makeGreen() {
-    document.getElementById("home").style.color = "green";
-}
+// Booking Form
+const bookingForm = document.getElementById("bookingForm");
 
+bookingForm.addEventListener("submit", function (e) {
 
-function yellowBackground() {
-    document.body.style.backgroundColor = "yellow";
-}
+    e.preventDefault();
 
-function blueBackground() {
-    document.body.style.backgroundColor = "lightblue";
-}
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const event = document.getElementById("event").value;
+    const seat = document.getElementById("seat").value;
+    const tickets = parseInt(document.getElementById("tickets").value);
 
-function whiteBackground() {
-    document.body.style.backgroundColor = "white";
-}
+    let price = 0;
 
-function darkMode() {
-    document.body.style.backgroundColor = "black";
-    document.body.style.color = "white";
-}
+    if (event === "Concert") {
+        price = 50;
+    } else if (event === "Movie") {
+        price = 20;
+    } else if (event === "Football") {
+        price = 35;
+    }
 
-function lightMode() {
-    document.body.style.backgroundColor = "white";
-    document.body.style.color = "black";
-}
+    const total = price * tickets;
 
-function changeMessage() {
-    document.getElementById("messages").innerHTML = "Thank you for visiting our ticketing website!";
-}
+    document.getElementById("message").innerHTML = `
+        <h3>✅ Booking Successful!</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Event:</strong> ${event}</p>
+        <p><strong>Seat:</strong> ${seat}</p>
+        <p><strong>Tickets:</strong> ${tickets}</p>
+        <p><strong>Total Price:</strong> $${total}</p>
+        <br>
+        <h4>🎉 Thank you for booking with anwar110207-oss Ticket Booking!</h4>
+    `;
+
+    bookingForm.reset();
+});
+
+// Smooth scrolling for navigation
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+
+        target.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
