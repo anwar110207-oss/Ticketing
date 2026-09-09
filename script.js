@@ -1,4 +1,4 @@
-```javascript
+
 // ==========================================
 // anwar110207-oss Ticket Booking Website
 // script.js
