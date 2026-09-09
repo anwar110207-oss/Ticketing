@@ -1,85 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>anwar110207-oss Ticket Booking</title>
 
-    <!-- EXTERNAL CSS - Question 3 -->
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- INTERNAL CSS - Question 2 -->
-    <style>
-        /* Change webpage background */
-        body {
-            background-color: #f4f7fb;
-            font-family: Arial, sans-serif;
-        }
-
-        /* All H2 headings */
-        h2 {
-            color: #1e3a8a;
-        }
-
-        /* All paragraphs */
-        p {
-            font-size: 18px;
-        }
-
-        /* Centre all H1 headings */
-        h1 {
-            text-align: center;
-        }
-
-        /* Group selector - Question 4 */
-        h1, h2 {
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
     <!-- ================= HEADER ================= -->
-    <header>
 
+    <header>
         <div class="logo">
-            <!-- INLINE CSS - Question 1 -->
-            <h1 style="color: blue; text-align: center;">
-                🎟️ anwar110207-oss Ticket Booking
-            </h1>
+            <h1>🎟️ anwar110207-oss Ticket Booking</h1>
         </div>
 
-        <!-- FLEXBOX NAVIGATION - Question 7 -->
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#book">Book Ticket</a></li>
+                <li><a href="#prices">Prices</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
 
     <!-- ================= HERO ================= -->
+
     <section id="home" class="hero">
 
-        <!-- INLINE CSS - Question 1 -->
-        <h2 style="background-color: lightblue;">
-            Book Your Next Adventure
-        </h2>
+        <h2>Book Your Next Adventure</h2>
 
-        <!-- INLINE CSS - Question 1 -->
-        <p style="color: green;">
-            Reserve tickets for concerts, movies, football matches and gaming events.
+        <p>
+            Reserve tickets for concerts, movies,
+            football matches and gaming events.
         </p>
 
-        <!-- INLINE CSS - Question 1 -->
-        <p style="font-size: 20px;">
+        <p>
             Choose your event and book your ticket today.
         </p>
 
@@ -91,82 +58,105 @@
 
 
     <!-- ================= EVENTS ================= -->
+
     <section id="events">
 
         <h2>Featured Events</h2>
 
         <div class="cards">
 
+            <!-- Concert -->
             <div class="card">
+
                 <img
                     src="https://github.com/user-attachments/assets/1a66309d-c63b-4dd2-87f1-6c3ca4334027"
                     alt="Concert event"
                 >
+
                 <h3>Live Music Concert</h3>
-                <p>Enjoy an exciting live music experience.</p>
-                <p>Price: $50</p>
+
+                <p>
+                    Enjoy an exciting live music experience.
+                </p>
+
+                <p><strong>Price: $50</strong></p>
+
             </div>
 
 
+            <!-- Movie -->
             <div class="card">
+
                 <img
                     src="https://github.com/user-attachments/assets/cd6ddd59-a14a-4f35-adf1-8dc0b4e2405d"
                     alt="Movie premiere event"
                 >
+
                 <h3>Movie Premiere</h3>
-                <p>Watch the latest movie on the big screen.</p>
-                <p>Price: $20</p>
+
+                <p>
+                    Watch the latest movie on the big screen.
+                </p>
+
+                <p><strong>Price: $20</strong></p>
+
             </div>
 
 
+            <!-- Football -->
             <div class="card">
+
                 <img
                     src="https://github.com/user-attachments/assets/4d4000eb-c19b-4492-84a4-e4648d6a46cf"
                     alt="Football match event"
                 >
+
                 <h3>Football Match</h3>
-                <p>Experience an exciting football match.</p>
-                <p>Price: $35</p>
+
+                <p>
+                    Experience an exciting football match.
+                </p>
+
+                <p><strong>Price: $35</strong></p>
+
             </div>
 
         </div>
 
     </section>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jACnZz0zj9c?si=jSdLflACYcmKyN1b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/irVNGjRFZGk?si=hI-YM9iGI2EH66fD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- ================= VIDEOS ================= -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vWC-USe1ncI?si=Qf5oNyQkBYTgPtpz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/L3J5DKwiVms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="videos">
 
-    <!-- ================= Q8 CARDS ================= -->
-    <section id="projects">
+        <h2>Event Videos</h2>
 
-        <h2>My Work</h2>
+        <div class="videos">
 
-        <div class="project-cards">
+            <iframe
+                src="https://www.youtube.com/embed/jACnZz0zj9c"
+                title="Event video 1"
+                allowfullscreen>
+            </iframe>
 
-            <div class="project-card">
-                <h3>Portfolio</h3>
-                <p>
-                    A collection of my work, skills and achievements.
-                </p>
-            </div>
+            <iframe
+                src="https://www.youtube.com/embed/irVNGjRFZGk"
+                title="Event video 2"
+                allowfullscreen>
+            </iframe>
 
-            <div class="project-card">
-                <h3>My Project</h3>
-                <p>
-                    A ticket booking website created using HTML and CSS.
-                </p>
-            </div>
+            <iframe
+                src="https://www.youtube.com/embed/vWC-USe1ncI"
+                title="Event video 3"
+                allowfullscreen>
+            </iframe>
 
-            <div class="project-card">
-                <h3>Assignments</h3>
-                <p>
-                    My computer studies and web development assignments.
-                </p>
-            </div>
+            <iframe
+                src="https://www.youtube.com/embed/L3J5DKwiVms"
+                title="Event video 4"
+                allowfullscreen>
+            </iframe>
 
         </div>
 
@@ -174,25 +164,34 @@
 
 
     <!-- ================= BOOKING FORM ================= -->
+
     <section id="book">
 
         <h2>Book Your Ticket</h2>
 
         <form id="bookingForm">
 
+            <label for="name">Full Name</label>
+
             <input
                 type="text"
                 id="name"
-                placeholder="Full Name"
+                placeholder="Enter your full name"
                 required
             >
+
+
+            <label for="email">Email Address</label>
 
             <input
                 type="email"
                 id="email"
-                placeholder="Email Address"
+                placeholder="Enter your email"
                 required
             >
+
+
+            <label for="event">Select Event</label>
 
             <select id="event">
 
@@ -210,6 +209,7 @@
 
             </select>
 
+
             <label for="seat">Select Seat</label>
 
             <select id="seat">
@@ -223,7 +223,10 @@
 
             </select>
 
-            <label for="tickets">Number of Tickets</label>
+
+            <label for="tickets">
+                Number of Tickets
+            </label>
 
             <input
                 type="number"
@@ -231,7 +234,9 @@
                 value="1"
                 min="1"
                 max="10"
+                required
             >
+
 
             <button type="submit">
                 Confirm Booking
@@ -239,108 +244,138 @@
 
         </form>
 
+
         <div id="message"></div>
 
     </section>
 
-<!-- ================= TICKET TABLE ================= -->
-<section id="prices">
 
-    <h2>Ticket Prices</h2>
+    <!-- ================= TICKET PRICES ================= -->
 
-    <table border="1">
-    <tr>
-        <th>Event</th>
-        <th>Date</th>
-        <th>Venue</th>
-        <th>Seat</th>
-        <th>Price</th>
-    </tr>
+    <section id="prices">
 
-    <tr>
-        <td>Live Music Concert</td>
-        <td>20 August 2026</td>
-        <td>Nairobi Arena</td>
-        <td>VIP</td>
-        <td>$50</td>
-    </tr>
+        <h2>Ticket Prices</h2>
 
-    <tr>
-        <td>Movie Premiere</td>
-        <td>25 August 2026</td>
-        <td>IMAX Cinema</td>
-        <td>Standard</td>
-        <td>$20</td>
-    </tr>
+        <table>
 
-    <tr>
-        <td>Football Match</td>
-        <td>30 August 2026</td>
-        <td>National Stadium</td>
-        <td>Regular</td>
-        <td>$35</td>
-    </tr>
-</table>
-    <!-- ================= COLOUR BUTTONS ================= -->
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Venue</th>
+                <th>Seat</th>
+                <th>Price</th>
+            </tr>
 
-<button onclick="changeColor('red')">
-    Change Heading Colour
-</button>
+            <tr>
+                <td>Live Music Concert</td>
+                <td>20 August 2026</td>
+                <td>Nairobi Arena</td>
+                <td>VIP</td>
+                <td>$50</td>
+            </tr>
 
-<button onclick="makeRed()">
-    Red
-</button>
+            <tr>
+                <td>Movie Premiere</td>
+                <td>25 August 2026</td>
+                <td>IMAX Cinema</td>
+                <td>Standard</td>
+                <td>$20</td>
+            </tr>
 
-<button onclick="makeBlue()">
-    Blue
-</button>
+            <tr>
+                <td>Football Match</td>
+                <td>30 August 2026</td>
+                <td>National Stadium</td>
+                <td>Regular</td>
+                <td>$35</td>
+            </tr>
 
-<button onclick="makeGreen()">
-    Green
-</button>
+        </table>
 
 
-<!-- ================= BACKGROUND BUTTONS ================= -->
+        <!-- ================= COLOUR BUTTONS ================= -->
 
-<h3>Change Background</h3>
+        <div class="controls">
 
-<button onclick="yellowBackground()">
-    Yellow
-</button>
+            <h3>Change Heading Colour</h3>
 
-<button onclick="blueBackground()">
-    Light Blue
-</button>
+            <button onclick="changeColor('red')">
+                Change Heading Colour
+            </button>
 
-<button onclick="whiteBackground()">
-    White
-</button>
+            <button onclick="makeRed()">
+                Red
+            </button>
+
+            <button onclick="makeBlue()">
+                Blue
+            </button>
+
+            <button onclick="makeGreen()">
+                Green
+            </button>
+
+
+            <h3>Change Background</h3>
+
+            <button onclick="yellowBackground()">
+                Yellow
+            </button>
+
+            <button onclick="blueBackground()">
+                Light Blue
+            </button>
+
+            <button onclick="whiteBackground()">
+                White
+            </button>
+
+            <button onclick="darkMode()">
+                Dark Mode
+            </button>
+
+            <button onclick="lightMode()">
+                Light Mode
+            </button>
+
+        </div>
+
+    </section>
+
+
     <!-- ================= CONTACT ================= -->
+
     <section id="contact">
 
         <h2>Contact Us</h2>
 
-        <p>Email: support@anwar110207@gmail.com</p>
+        <p>
+            Email: support@anwar110207-oss.com
+        </p>
 
-        <p>Phone: +254 700 000 000</p>
+        <p>
+            Phone: +254 700 000 000
+        </p>
 
-
-</section>
     </section>
 
 
     <!-- ================= FOOTER ================= -->
+
     <footer>
 
-        <p>©️ 2026 Anwar Ticket Booking</p>
+        <p>
+            © 2026 anwar110207-oss Ticket Booking
+        </p>
 
-        <p>Designed by anwar110207-oss</p>
+        <p>
+            Designed by anwar110207-oss
+        </p>
 
     </footer>
 
-
-            
-        </section>
-
 </body>
+
 </html>
+```
+
